@@ -8,6 +8,7 @@ import java.io.IOException;
 public class LoginPage extends Base{
 
     public static WebDriver driver;
+
     FileInputStream fileInputStream = new FileInputStream("C:\\Users\\erend\\Desktop\\SeleniumTry\\src\\main\\java\\data.properties");
 
     By emailInput = By.id("user-identifier-input");
@@ -25,8 +26,20 @@ public class LoginPage extends Base{
         properties.load(fileInputStream);
         driver.findElement(passwordInput).sendKeys(properties.getProperty("password"));
     }
+
     public void clickLoginBtn() {
         driver.findElement(loginBtn).click();
     }
+    public void getLoginPageTitle() {
+        driver.getTitle();
+    }
+   /* public boolean titleValidation() {
+        if (getLoginPageTitle().equals("BBC – Sign in")){
+            return true;
+        }else{
+            return false;
+        }
+    }*/
+    public String getErrorMsg() { return driver.findElement(By.cssSelector("div[id='form-message-password'] p")).getText();}
 }
 

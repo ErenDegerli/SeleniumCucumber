@@ -11,4 +11,9 @@
             <class name="LoginPageTest"/>
         </classes>
     </test>
+    <test name="PasswordReset">
+        <classes>
+            <class name="PasswordResetPageTest"/>
+        </classes>
+    </test>
 </suite>
