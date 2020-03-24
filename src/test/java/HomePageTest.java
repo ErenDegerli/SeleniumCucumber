@@ -1,6 +1,8 @@
+import base.Base;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import pages.HomePage;
 
 import java.io.IOException;
 

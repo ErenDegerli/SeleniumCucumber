@@ -1,8 +1,9 @@
-import org.openqa.selenium.By;
-import org.testng.Assert;
+import base.Base;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pages.HomePage;
+import pages.LoginPage;
 
 import java.io.FileInputStream;
 import java.io.IOException;

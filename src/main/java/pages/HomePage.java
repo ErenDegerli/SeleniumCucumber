@@ -1,3 +1,6 @@
+package pages;
+
+import base.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import java.io.FileInputStream;
